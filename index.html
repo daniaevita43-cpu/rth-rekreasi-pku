@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawal RTH Riau</title>
+    <meta
+      name="description"
+      content="Website digital untuk mengelola ruang terbuka hijau di Riau melalui laporan kondisi, reservasi kegiatan, dan dashboard admin."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Ganti mode tampilan" title="Ganti mode tampilan">☀️</button>
+
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand">🌿 <span>Ruang Terbuka Hijau</span> Riau</a>
+        <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a href="index.html">Beranda</a>
+          <a href="about.html">About</a>
+          <a href="detail.html">Peta Riau</a>
+          <a href="#fitur">Fitur MVP</a>
+          <a href="#taman">RTH</a>
+          <a href="#lapor">Lapor & Reservasi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            
+            <h1>Ruang Terbuka Hijau (RTH) Riau</h1>
+            <p class="hero-title-sub">Sistem digital partisipatif untuk mengawasi, memelihara, dan memanfaatkan ruang terbuka hijau secara lebih teratur demi kota yang lebih sehat, hijau, dan inklusif.</p>
+            <p>
+              Website ini menghadirkan solusi digital untuk memantau ruang terbuka hijau, melaporkan kondisi taman yang terbengkalai, serta mengatur reservasi penggunaan RTH untuk kegiatan warga secara terstruktur.
+            </p>
+            <div class="hero-actions">
+              <a href="#lapor" class="btn btn-primary">📣 Laporkan Kondisi</a>
+              <a href="#taman" class="btn btn-light">🌳 Lihat RTH</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <strong>30%</strong>
+                <span>target RTH per proyek</span>
+              </div>
+              <div class="stat-card">
+                <strong>3+</strong>
+                <span>taman siap ditampilkan</span>
+              </div>
+              <div class="stat-card">
+                <strong>24/7</strong>
+                <span>alur pelaporan & reservasi digital</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Solusi yang ditawarkan</h3>
+            <ul>
+              <li>📍 Direktori RTH & taman publik</li>
+              <li>📝 Form laporan masalah berbasis tiket</li>
+              <li>🗓️ Reservasi kegiatan warga yang aman</li>
+              <li>🛠️ Dashboard admin untuk pengelolaan</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section policy-section" id="green-policy" aria-labelledby="green-policy-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Green Policy RTH</span>
+              <h2 id="green-policy-title">Kebijakan hijau yang bisa dimulai dari ruang publik</h2>
+            </div>
+          </div>
+
+          <div class="policy-carousel" data-carousel tabindex="0" aria-roledescription="carousel" aria-label="Lima kebijakan hijau untuk RTH Riau">
+            <div class="policy-track">
+              <article class="policy-slide is-active" role="group" aria-roledescription="slide" aria-label="1 dari 5">
+                <img src="Asset/Alam-Mayang-pagi.jpg" alt="Pepohonan rindang di Alam Mayang Park" />
+                <div class="policy-copy">
+                  <span class="policy-number">01 / Ruang hijau</span>
+                  <h3>Jaga target 30% RTH dalam setiap proyek kota</h3>
+                  <p>Setiap pembangunan perlu menyisakan ruang hijau yang terukur, terawat, dan mudah diakses warga agar pertumbuhan kota tetap seimbang dengan kualitas lingkungan.</p>
+                </div>
+              </article>
+              <article class="policy-slide" role="group" aria-roledescription="slide" aria-label="2 dari 5" aria-hidden="true">
+                <img src="Asset/RTH-PUTRI-KACA-MAYANG-PAGI.jpg" alt="Jalur pejalan kaki di RTH Putri Kaca Mayang" />
+                <div class="policy-copy">
+                  <span class="policy-number">02 / Akses publik</span>
+                  <h3>Bangun taman yang aman dan inklusif</h3>
+                  <p>Jalur pejalan kaki, penerangan, tempat duduk, dan akses untuk semua kelompok membuat RTH menjadi ruang bersama yang nyaman sepanjang hari.</p>
+                </div>
+              </article>
+              <article class="policy-slide" role="group" aria-roledescription="slide" aria-label="3 dari 5" aria-hidden="true">
+                <img src="Asset/RTH-PEDESTRIAN-CENTER-PAGI.jpg" alt="Ruang hijau di kawasan RTH Tunjuk Ajar Integritas" />
+                <div class="policy-copy">
+                  <span class="policy-number">03 / Mobilitas</span>
+                  <h3>Prioritaskan jalan kaki dan transportasi rendah emisi</h3>
+                  <p>RTH yang terhubung dengan jalur pedestrian dan transportasi publik membantu mengurangi kendaraan pribadi sekaligus membuat pusat kota lebih sehat.</p>
+                </div>
+              </article>
+              <article class="policy-slide" role="group" aria-roledescription="slide" aria-label="4 dari 5" aria-hidden="true">
+                <img src="Asset/Alam-Mayang-Malam.jpg" alt="Suasana malam Alam Mayang Park" />
+                <div class="policy-copy">
+                  <span class="policy-number">04 / Perawatan</span>
+                  <h3>Rawat taman dengan data dan partisipasi warga</h3>
+                  <p>Laporan kondisi, jadwal perawatan, dan respons pengelola yang transparan membuat setiap kerusakan lebih cepat ditangani sebelum meluas.</p>
+                </div>
+              </article>
+              <article class="policy-slide" role="group" aria-roledescription="slide" aria-label="5 dari 5" aria-hidden="true">
+                <img src="Asset/RTH-PEDESTRIAN-CENTER-MALAM.jpg" alt="RTH Tunjuk Ajar Integritas yang terang pada malam hari" />
+                <div class="policy-copy">
+                  <span class="policy-number">05 / Kolaborasi</span>
+                  <h3>Ubah RTH menjadi pusat aksi iklim komunitas</h3>
+                  <p>Komunitas, sekolah, pelaku usaha, dan pemerintah dapat berkolaborasi melalui kegiatan hijau, edukasi lingkungan, serta reservasi ruang yang tertib.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="policy-controls">
+              <button class="policy-arrow" type="button" data-carousel-prev aria-label="Slide sebelumnya">←</button>
+              <div class="policy-dots" role="tablist" aria-label="Pilih slide kebijakan hijau">
+                <button class="policy-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Tampilkan slide 1" data-slide-to="0"></button>
+                <button class="policy-dot" type="button" role="tab" aria-selected="false" aria-label="Tampilkan slide 2" data-slide-to="1"></button>
+                <button class="policy-dot" type="button" role="tab" aria-selected="false" aria-label="Tampilkan slide 3" data-slide-to="2"></button>
+                <button class="policy-dot" type="button" role="tab" aria-selected="false" aria-label="Tampilkan slide 4" data-slide-to="3"></button>
+                <button class="policy-dot" type="button" role="tab" aria-selected="false" aria-label="Tampilkan slide 5" data-slide-to="4"></button>
+              </div>
+              <button class="policy-arrow" type="button" data-carousel-next aria-label="Slide berikutnya">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="masalah">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Masalah utama dan arah solusi</h2>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>⚠️ Masalah yang dihadapi</h3>
+              <p>
+                Riau sedang memperkuat program Green City, namun warga belum memiliki sarana yang sederhana untuk melaporkan taman yang rusak atau terbengkalai. RTH juga belum dikelola secara digital sehingga pemanfaatan untuk kegiatan komunitas sering tidak terkoordinasi.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Ketersediaan RTH</span>
+                <span class="chip">Partisipasi warga</span>
+                <span class="chip">Koordinasi digital</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>✅ Solusi yang kami tawarkan</h3>
+              <p>
+                Website “Kawal RTH Riau” menggabungkan direktori taman, sistem pelaporan kondisi, dan reservasi kegiatan warga. Dengan pendekatan yang sederhana, aplikasi ini membuat data RTH lebih terkelola serta memperkuat hubungan antara warga, pengelola, dan pemerintah kota.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Smart Sustainable Solution</span>
+                <span class="chip">SDG 11</span>
+                <span class="chip">Inklusif</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="fitur">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Fitur MVP yang diusung</h2>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card reveal">
+              <div class="icon">🏡</div>
+              <h3>Landing Page</h3>
+              <p>Menjelaskan konteks masalah, tujuan, dan nilai aplikasi untuk wilayah Riau.</p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="icon">🌿</div>
+              <h3>Direktori RTH</h3>
+              <p>Daftar taman dengan foto, alamat, jam operasional, deskripsi singkat dan data penting.</p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="icon">📝</div>
+              <h3>Lapor Kondisi</h3>
+              <p>Warga dapat mengirimkan laporan dengan status yang jelas: Baru, Diproses, Selesai.</p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="icon">🗓️</div>
+              <h3>Reservasi Kegiatan</h3>
+              <p>Sistem memeriksa konflik jadwal sehingga kegiatan warga bisa diatur lebih tertib.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-preview">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Tentang proyek dan konteks wilayah</h2>
+          </div>
+          <div class="card reveal">
+            <p>
+              Proyek ini dibangun untuk menjawab kebutuhan pengelolaan RTH di Riau dengan pendekatan digital yang sederhana, partisipatif, dan berbasis data. Kami mengaitkan persoalan ruang terbuka hijau dengan dukungan konservasi dari BBKSDA Riau dan semangat layanan publik dari Pemerintah Provinsi Riau.
+            </p>
+            <div class="link-row">
+              <a class="link-pill" href="about.html">Buka halaman About</a>
+              <a class="link-pill" href="detail.html">Lihat peta Riau</a>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top: 1rem;">
+            <div class="card reveal info-panel">
+              <h3>🌱 Green City Pekanbaru</h3>
+              <p>Pekanbaru terus mendorong pembangunan kota yang lebih hijau melalui penambahan ruang terbuka, penghijauan jalan, dan partisipasi masyarakat dalam menjaga lingkungan.</p>
+            </div>
+            <div class="card reveal info-panel">
+              <h3>🌳 RTH dan kualitas hidup</h3>
+              <p>RTH yang terawat membantu menurunkan suhu perkotaan, meningkatkan kenyamanan, dan memberi ruang warga untuk bersosialisasi serta beraktivitas sehat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="referensi">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Referensi utama</h2>
+          </div>
+          <div class="grid-2">
+            <a class="card reference-card" href="https://bbksda-riau.id/" target="_blank" rel="noreferrer">
+              <h3>🌲 BBKSDA Riau</h3>
+              <p>Sumber resmi mengenai konservasi alam, kawasan perlindungan, dan pengelolaan ekosistem di wilayah Riau.</p>
+            </a>
+            <a class="card reference-card" href="https://www.riau.go.id/" target="_blank" rel="noreferrer">
+              <h3>🏛️ Pemerintah Provinsi Riau</h3>
+              <p>Portal resmi Provinsi Riau sebagai referensi layanan publik, informasi pembangunan, dan semangat partisipasi masyarakat.</p>
+            </a>
+            <a class="card reference-card" href="http://peta.riau.go.id/" target="_blank" rel="noreferrer">
+              <h3>🗺️ Peta Riau</h3>
+              <p>Referensi geografis wilayah Riau yang menunjang pemahaman konteks konservasi dan tata ruang.</p>
+            </a>
+            <a class="card reference-card" href="https://riau.antaranews.com/berita/448101/pemko-pekanbaru-perkuat-green-city-pengembang-wajib-sediakan-30-rth" target="_blank" rel="noreferrer">
+              <h3>🌿 Green City Riau</h3>
+              <p>Referensi kebijakan Green City yang menjadi dasar penting dari permasalahan yang diangkat dalam proyek ini.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="taman">
+        <div class="container">
+          <div class="section-heading">
+            <h2>RTH yang ditampilkan di direktori</h2>
+          </div>
+          <div class="park-grid">
+            <article class="park-card park-card--alam-mayang">
+              <div class="park-thumb"></div>
+              <div class="park-content">
+                <h3>Alam Mayang Park</h3>
+                <p>RTH kota yang ramai dimanfaatkan warga untuk bersantai, jogging ringan, dan kegiatan keluarga di area hijau yang rindang.</p>
+                <p><strong>Alamat:</strong> Jl. Tuanku Tambusai No. 88, Kelurahan Delima, Kecamatan Tampan, Pekanbaru, Riau 28293</p>
+                <p><strong>Jam:</strong> 05.00 – 21.00</p>
+              </div>
+            </article>
+            <article class="park-card park-card--putri-kaca-mayang">
+              <div class="park-thumb"></div>
+              <div class="park-content">
+                <h3>RTH Putri Kaca Mayang</h3>
+                <p>Area ruang terbuka hijau dengan jalur pejalan kaki, pohon rindang, dan suasana tenang cocok untuk komunitas maupun rekreasi santai.</p>
+                <p><strong>Alamat:</strong> Jl. Kaharuddin Nasution No. 120, Kelurahan Sidomulyo Barat, Kecamatan Tampan, Pekanbaru, Riau 28293</p>
+                <p><strong>Jam:</strong> 06.00 – 20.00</p>
+              </div>
+            </article>
+            <article class="park-card park-card--pedestrian-center">
+              <div class="park-thumb"></div>
+              <div class="park-content">
+                <h3>RTH Tunjuk Ajar Integritas</h3>
+                <p>Lokasi strategis yang cocok untuk acara komunitas, edukasi lingkungan, serta aktivitas warga di pusat kota dengan nuansa hijau.</p>
+                <p><strong>Alamat:</strong> Jl. H. Juanda, Kelurahan Simpang Tiga, Kecamatan Bukit Raya, Pekanbaru, Riau 28126</p>
+                <p><strong>Jam:</strong> 05.30 – 22.00</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Roadmap proyek</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-card reveal">
+              <strong>Minggu 1</strong>
+              <p>Riset masalah, foto taman, wireframe, setup GitHub dan Vercel.</p>
+            </div>
+            <div class="timeline-card reveal">
+              <strong>Minggu 2</strong>
+              <p>Bangun landing page, direktori taman, dan integrasi database awal.</p>
+            </div>
+            <div class="timeline-card reveal">
+              <strong>Minggu 3</strong>
+              <p>Fitur pelaporan, upload foto, reservasi, dan dashboard admin.</p>
+            </div>
+            <div class="timeline-card reveal">
+              <strong>Minggu 4</strong>
+              <p>Testing, perbaikan UI, validasi mobile, dan siap submit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="lapor">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Lapor kondisi & ajukan reservasi</h2>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>📝 Laporan kondisi RTH</h3>
+              <form id="reportForm" name="lapor-rth" action="https://formsubmit.co/ajax/tristanivanderkrisdialdy@gmail.com" method="POST" novalidate>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="Laporan RTH Riau - Website Kawal RTH Riau" />
+                <label>Nama pelapor</label>
+                <input name="reportName" type="text" placeholder="Contoh: Rina" required />
+                <label>Kontak</label>
+                <input name="reportContact" type="text" placeholder="Nomor telepon / email" required />
+                <label>RTH terkait</label>
+                <select name="reportPark" required>
+                  <option>Alam Mayang Park - Jl. Tuanku Tambusai No. 88, Kelurahan Delima, Kecamatan Tampan, Pekanbaru, Riau 28293</option>
+                  <option>RTH Putri Kaca Mayang - Jl. Kaharuddin Nasution No. 120, Kelurahan Sidomulyo Barat, Kecamatan Tampan, Pekanbaru, Riau 28293</option>
+                  <option>RTH Tunjuk Ajar Integritas - Jl. H. Juanda, Kelurahan Simpang Tiga, Kecamatan Bukit Raya, Pekanbaru, Riau 28126</option>
+                </select>
+                <label>Deskripsi masalah</label>
+                <textarea name="reportDescription" placeholder="Jelaskan kondisi taman, kerusakan, atau kebutuhan perbaikan..."></textarea>
+                <button class="btn btn-primary" type="submit">Kirim Laporan</button>
+                <div id="reportNotice" class="notice">Laporan berhasil dikirim ke admin.</div>
+              </form>
+            </div>
+            <div class="card">
+              <h3>🗓️ Reservasi kegiatan warga</h3>
+              <form id="bookingForm" name="reservasi-rth" action="https://formsubmit.co/ajax/tristanivanderkrisdialdy@gmail.com" method="POST" autocomplete="off" novalidate>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="Reservasi RTH Riau - Website Kawal RTH Riau" />
+                <label>Nama pemohon</label>
+                <input name="bookingName" type="text" placeholder="Contoh: Budi" required />
+                <label>Jenis kegiatan</label>
+                <input name="bookingType" type="text" placeholder="Senam pagi / gotong royong / acara RT" required />
+                <label>Tanggal</label>
+                <input name="bookingDate" type="date" required />
+                <label>Jam</label>
+                <input name="bookingTime" type="text" placeholder="08.00 - 10.00" required />
+                <button class="btn btn-light" type="submit">Ajukan Reservasi</button>
+                <div id="bookingNotice" class="notice">Reservasi berhasil dikirim dan menunggu approval admin.</div>
+              </form>
+              <div class="status-list" style="margin-top: 1rem;">
+                <div class="status-item"><strong>Status laporan:</strong> Baru → Diproses → Selesai</div>
+                <div class="status-item"><strong>Status reservasi:</strong> Pending → Approved / Rejected</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Kawal RTH Riau</h3>
+          <p>Platform partisipatif untuk mengelola ruang terbuka hijau, mendukung Green City, dan mewujudkan Sustainable Development Goal di Riau.</p>
+        </div>
+        <div>
+          <h4>Informasi Utama</h4>
+          <ul>
+            <li>RTH & taman publik</li>
+            <li>Laporan kondisi warga</li>
+            <li>Reservasi kegiatan komunitas</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Referensi</h4>
+          <ul>
+            <li>BBKSDA Riau</li>
+            <li>Pemprov Riau</li>
+            <li>Program Green City</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Kawal RTH Riau — Proyek Digital untuk Wilayah yang Lebih Hijau.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

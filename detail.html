@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peta Riau - Kawal RTH Pekanbaru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Ganti mode tampilan" title="Ganti mode tampilan">☀️</button>
+
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand">🌿 <span>Kawal RTH</span> Pekanbaru</a>
+        <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a href="index.html">Beranda</a>
+          <a href="about.html">About</a>
+          <a href="detail.html">Peta Riau</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="eyebrow">Peta Wilayah Riau</div>
+          <h1>Visualisasi lokasi menjadi bagian penting untuk memahami konteks konservasi dan ruang publik.</h1>
+          <p>
+            Halaman ini memusatkan perhatian pada peta wilayah Riau agar proyek Anda terasa lebih kuat secara konteks geografis dan lebih meyakinkan saat dipresentasikan.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card reveal">
+            <h3>🗺️ Peta Riau</h3>
+            <p>
+              Peta ini memberikan gambaran wilayah Riau secara visual, membantu menghubungkan isu ruang terbuka hijau dengan kondisi geografis dan potensi konservasi daerah.
+            </p>
+            <div class="map-shell" style="margin-top: 1rem;">
+              <iframe
+                src="https://www.google.com/maps?q=RTH+Alam+Mayang+Park+Pekanbaru|RTH+Putri+Kaca+Mayang+Pekanbaru|RTH+Tunjuk+Ajar+Integritas+Jl.+H.+Juanda+Pekanbaru&z=12&output=embed"
+                title="Peta lokasi tiga RTH di Pekanbaru"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Kawal RTH Pekanbaru</h3>
+          <p>Website partisipatif yang menghubungkan masyarakat, ruang terbuka hijau, dan data wilayah secara lebih terarah.</p>
+        </div>
+        <div>
+          <h4>Informasi</h4>
+          <ul>
+            <li>Peta wilayah Riau</li>
+            <li>Konteks konservasi</li>
+            <li>RTH dan taman publik</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tujuan</h4>
+          <ul>
+            <li>Digitalisasi pelaporan</li>
+            <li>Reservasi teratur</li>
+            <li>Partisipasi masyarakat</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Kawal RTH Pekanbaru — Terhubung untuk ruang publik yang lebih baik.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
